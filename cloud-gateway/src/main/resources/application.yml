@@ -1,14 +1,15 @@
 server:
   port: 9191
 
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-  instance:
-    hostname: localhost
+#Removed from here as these will be pulled in from the cloud config server as defined in bootstrap.yml config file
+#eureka:
+ # client:
+  #  register-with-eureka: true
+   # fetch-registry: true
+    #service-url:
+     # defaultZone: http://localhost:8761/eureka/
+  #instance:
+   # hostname: localhost
 
 spring:
   application:
